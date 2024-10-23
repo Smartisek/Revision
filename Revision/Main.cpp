@@ -6,11 +6,12 @@ using namespace std;
 void display(int* arr, int size);
 void recursionQuestion1();
 void recursionQuestion2();
+void recursionQuestion3();
 
 
 int main() {
 
-	recursionQuestion2();
+	recursionQuestion3();
 
 	return 0;
 }
@@ -34,6 +35,12 @@ void recursionQuestion2() {
 	minMax(arr, 5, min, max, 0);
 	cout << "Minimum Value: " << min << endl;
 	cout << "Maximum Value: " << max << endl;
+}
+
+void recursionQuestion3() {
+	string s = "pots&pans";
+	cout << s << " Reversed is " << reverse(s) << endl;
+	printString(s);
 }
 
 

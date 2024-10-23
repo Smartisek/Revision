@@ -33,3 +33,20 @@ void minMax(int* arr, int size, int& min, int& max, int pos) {
 	// recursion that keeps calling itself until pos is equal to initial statement that it equals size 
 	minMax(arr, size, min, max, pos + 1);
 }
+
+string reverse(const string& s, int p) {
+	// when p reaches length of string then stop and return empty string
+	if (p == s.length()) {
+		return "";
+	}
+	// return current s[p] and call itself with p + 1 then when if reached return backwards 
+	return reverse(s, p + 1) + s[p];
+}
+
+void printString(const string& s, int p) {
+	if (p == s.length()) {
+		return;
+	}
+	cout << s[p];
+	printString(s, p + 1);
+}
