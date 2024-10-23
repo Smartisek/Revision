@@ -128,14 +128,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AllKinds.h" />
+    <ClInclude Include="DynamicMemory.h" />
     <ClInclude Include="Flower.h" />
     <ClInclude Include="Recursion.h" />
+    <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AllKinds.cpp" />
+    <ClCompile Include="DynamicMemory.cpp" />
     <ClCompile Include="Flower.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Recursion.cpp" />
+    <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,6 +1,7 @@
 #include "Recursion.h"
 #include "AllKinds.h"
 #include "Flower.h"
+#include "DynamicMemory.h"
 #include <iostream>
 
 using namespace std; 
@@ -14,11 +15,8 @@ void classes_flowerMain();
 
 
 int main() {
-
-	/*recursionQuestion3();
-	classes_q1();*/
-	classes_flowerMain();
-
+	
+	dynamic_main3();
 	return 0;
 }
 
@@ -79,15 +77,4 @@ void classes_flowerMain()
 	cout << "Post increment on f: " << ++f << endl;
 
 
-}
-
-void display(int* arr, int size) {
-	cout << "[";
-	for (int i = 0; i < size; i++)
-	{
-		if (i != 0)
-			cout << ", ";
-		cout << arr[i];
-	}
-	cout << "]" << endl;
 }
