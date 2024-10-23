@@ -16,7 +16,7 @@ void classes_flowerMain();
 
 int main() {
 	
-	dynamic_main4();
+	dynamic_main5();
 	return 0;
 }
 

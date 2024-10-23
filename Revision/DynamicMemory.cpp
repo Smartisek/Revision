@@ -70,3 +70,24 @@ void dynamic_main4() {
 	display(arr, 6);
 	cout << "Count of even: " << countEven(arr, 6) << endl;
 }
+
+double* getMax(double* arr, int size) {
+	if (size == 0) {
+		return nullptr;
+	}
+
+	double* max = arr;
+	for (int i = 1; i < size; i++) {
+		if (*max < arr[i]) {
+			max = &arr[i];
+		}
+	}
+	return max;
+}
+
+void dynamic_main5()
+{
+	cout << "\n\n\n=========  Pointers & Dynamic Memory  Q5 =================" << endl;
+	double* arr = new double[5] {1.2, 2.3, 3.4, 9.5, 4.5};
+	cout << "Maximum Value: " << getMax(arr, 5) << endl;
+}
