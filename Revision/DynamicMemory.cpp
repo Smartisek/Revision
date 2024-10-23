@@ -51,3 +51,22 @@ void dynamic_main3() {
 	cout << "After reverse: ";
 	display(arr, 5);
 }
+
+int countEven(int* arr, int size) {
+	int total = 0;
+	for (int i = 0; i < size; i++) {
+		if (*arr%2 == 0) {
+			total += 1;
+		}
+		arr++;
+	}
+	return total;
+}
+
+void dynamic_main4() {
+	cout << "\n\n\n=========  Pointers & Dynamic Memory  Q4 =================" << endl;
+	int* arr = new int[6] {1, 2, 3, 4, 5, 8};
+	cout << "Original Array: ";
+	display(arr, 6);
+	cout << "Count of even: " << countEven(arr, 6) << endl;
+}

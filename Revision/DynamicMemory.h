@@ -6,7 +6,9 @@ using namespace std;
 void dynamic_main1();
 void dynamic_main2();
 void dynamic_main3();
+void dynamic_main4();
 
 int totalOfArray(int* arr, int size);
 void swap(int* x, int* y);
 void reverse(int* arr, int size);
+int countEven(int* arr, int size);
