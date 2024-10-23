@@ -18,12 +18,24 @@
     <ClInclude Include="Recursion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="AllKinds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Flower.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Recursion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AllKinds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Flower.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

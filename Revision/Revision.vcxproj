@@ -127,9 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AllKinds.h" />
+    <ClInclude Include="Flower.h" />
     <ClInclude Include="Recursion.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AllKinds.cpp" />
+    <ClCompile Include="Flower.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Recursion.cpp" />
   </ItemGroup>

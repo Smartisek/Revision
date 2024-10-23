@@ -1,4 +1,6 @@
 #include "Recursion.h"
+#include "AllKinds.h"
+#include "Flower.h"
 #include <iostream>
 
 using namespace std; 
@@ -7,11 +9,15 @@ void display(int* arr, int size);
 void recursionQuestion1();
 void recursionQuestion2();
 void recursionQuestion3();
+void classes_q1();
+void classes_flowerMain();
 
 
 int main() {
 
-	recursionQuestion3();
+	/*recursionQuestion3();
+	classes_q1();*/
+	classes_flowerMain();
 
 	return 0;
 }
@@ -43,9 +49,37 @@ void recursionQuestion3() {
 	printString(s);
 }
 
+void classes_q1()
+{
+	AllKinds ak(4, 3.15145, 987536987l);
+	cout << "Integer + Float = " << ak.sumIntFloat() << endl;
+	cout << "Integer + Long = " << ak.sumIntLong() << endl;
+	cout << "Long + Float = " << ak.sumLongFloat() << endl;
+
+}
+
+void classes_flowerMain()
+{
+	Flower f;
+	Flower f2("Daisy", 12, .25);
+	cout << "F: " << f << endl;
+	cout << "F2: " << f2 << endl;
+
+	//test setters
+	f.setName("Lily");
+	f.setPedals(6);
+	f.setPrice(1.50);
+	cout << "After setters called " << endl;
+	cout << "F: " << f << endl;
+
+	f2 = f2 + .5;
+	cout << "F2 After price increase: " << f2 << endl;
 
 
+	cout << "Post increment on f: " << ++f << endl;
 
+
+}
 
 void display(int* arr, int size) {
 	cout << "[";
